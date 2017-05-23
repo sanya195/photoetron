@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule \.(php|htm|html|swf|fla|xml|ico|jpg|gif|png|js|css)$ - [L]
+RewriteRule .* index.php [L]
+
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cd313345-a229-4056-8959-f5dc06908517" name="photoetron" url="http://photoetron.adr.com.ua">
+        <fileTransfer host="photoetron.adr.com.ua" port="21" password="dfd9df9bdfcbdf98dfc4df99dfd3df9edfcbdf9fdff0dfe2" username="sanya195">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
