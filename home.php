@@ -10,7 +10,8 @@ while ($row = mysqli_fetch_assoc($res)){
 }
 
 for ($i = 0; $i < count($data); $i++) {
-    echo "<div class='post' id='" . $data[$i]['id'] . "'>" . "<img src=" . $data[$i]['image'] . ">";
+    echo "<div class='post' id='" . $data[$i]['id'] . "'>" . "<div class='image'><img src=" . $data[$i]['image'] . "></div>";
+    echo '<div class="zoom"><img src="/site/img/zoom.png"></div>';
     echo "<div class='postTitle'>";
     echo '<div class="postName">' . $data[$i]['name'] . '</div>';
     echo '<div class="dataut">';

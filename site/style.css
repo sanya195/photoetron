@@ -6,16 +6,17 @@
 }
 
 .cbalink {
+
     display: none;
 }
 
 body {
     font-family: 'Noto Sans', sans-serif;
     background-image: url("img/background.png");
-    color: #e6e6e6;
+    color: #aaaaaa;
 }
 
-body, html, #wrapper{
+body, html, #wrapper {
     height: 100%;
 }
 
@@ -32,11 +33,13 @@ body, html, #wrapper{
     z-index: 3;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
-#headMenu{
+
+#headMenu {
     width: 960px;
     height: 50px;
     margin: auto;
 }
+
 #logo {
     display: flex;
     width: 200px;
@@ -61,7 +64,7 @@ body, html, #wrapper{
     justify-content: flex-start;
 }
 
-.post{
+.post {
     max-width: 248px;
     height: 270px;
     background-color: aliceblue;
@@ -69,51 +72,94 @@ body, html, #wrapper{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    border: solid 1px #1f1f1f;
+    border: solid 1px #101010;
+    cursor: pointer;
 }
-.postTitle{
+
+.postTitle {
     box-sizing: border-box;
     max-width: 250px;
     min-width: 200px;
     height: 75px;
-    background-color: #AAAAAA;
+    background-color: #272727;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     padding: 5px;
 }
-.postName{
+
+.postName {
     order: 0;
-    color: #1f1f1f;
+    color: #d6d6d6;
+    font-size: 18px;
 }
-.dataut{
+
+.dataut {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-.author{
+
+.author {
     order: 0;
+    color: #737373;
 }
-.date{
+
+.date {
     order: 1;
     align-self: flex-end;
+    color: #737373;
 }
-.post > img{
+
+.image {
     height: 195px;
+    text-align: center;
 }
-#sideMenu{
+
+#sideMenu {
     width: 200px;
     position: fixed;
 }
-#posts{
+
+.sideMenuItem > a > div {
+    color: #e4e4e4;
+    width: 100%;
+    transition: ease 300ms;
+    border-radius: 3px 0 0 3px;
+}
+
+.sideMenuItem > a {
+    text-decoration: none;
+}
+
+.sideMenuItem > a > div:hover {
+    background-color: rgba(228, 228, 228, 0.75);
+    color: #1f1f1f;
+}
+
+#posts {
     display: flex;
     width: 750px;
     top: 0;
     position: absolute;
     right: 0;
-    background-color: #AAAAAA;
+    background-color: #353535;
     flex-wrap: wrap;
-    justify-content: space-between;
-    bottom: 0;
+}
+
+.zoom {
+    width: 248px;
+    height: 195px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    position: absolute;
+}
+
+.zoom > img {
+    width: 32px;
+    margin: auto;
+    position: absolute;
+    right:108px;
+    top:92px;
 }
