@@ -12,9 +12,25 @@
 <div id="wrapper">
     <div class="logform-container">
         <div class="logform">
-            <div class="close"></div>
-            <form method="post">
-            </form>
+            <div class="closelog"></div>
+            <form method="post"></form>
+        </div>
+    </div>
+    <div class="zoom-container">
+        <div class="img-container">
+            <div class="closeimg"></div>
+            <div class="img"></div>
+            <div class="img-title">
+                <div class="tit-name"></div>
+                <div class="tit-author"></div>
+                <div class="like">
+                    <div class="like-btn">
+                        <div style="background-image: url('https://vk.com/images/icons/video_actions.png');height: 11px;width: 15px;display: inline-block;margin: 3px 0 0 0;"></div>
+                        Мне нравится
+                    </div>
+                    <div class="tit-date"></div>
+                </div>
+            </div>
         </div>
     </div>
     <div id="head">

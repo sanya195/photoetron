@@ -216,7 +216,7 @@ input{
     width: 400px;
 }
 
-.close{
+.closelog, .closeimg{
     width: 100px;
     height: 100px;
     position: fixed;
@@ -229,4 +229,70 @@ input{
     text-decoration: none;
     color: #1f1f1f;
     text-align: center;
+}
+
+.zoom-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 10;
+    overflow-y: scroll;
+    display: none;
+}
+
+.img-container{
+    position: relative;
+    right: 0;
+    left: 0;
+    width: 960px;
+    top: 15px;
+    background-color: #101010;
+    margin: auto;
+}
+
+.img{
+    width: 960px;
+    text-align: center;
+    line-height: 0;
+}
+
+.img-title{
+    width: 960px;
+    height: 100px;
+}
+
+.tit-name{
+    padding: 5px 5px 5px 10px;
+    font-size: 30px;
+    width: 640px;
+    display: inline-block;
+}
+
+.tit-author{
+    width: 290px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.tit-date{
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    right: 10px;
+}
+.like{
+    width: 480px;
+    display: inline-block;
+}
+.like-btn{
+    background-color: #375f87;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
 }
