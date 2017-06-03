@@ -41,7 +41,7 @@ body, html, #wrapper {
     display: flex;
 }
 
-#login{
+#login, #logout{
     margin-left: auto;
     width: 100px;
     display: table-cell;
@@ -52,8 +52,22 @@ body, html, #wrapper {
     transition: background 100ms ease;
 }
 
-#login:hover{
+#login:hover, #logout:hover{
     background-color: rgba(0,0,0,0.5);
+}
+
+#logout{
+    margin: 0;
+}
+
+.user-name{
+    color: #737373;
+    margin-left: auto;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 14px 0;
+    transition: background 100ms ease;
 }
 
 #logo {
@@ -167,7 +181,7 @@ body, html, #wrapper {
 .zoom {
     width: 248px;
     height: 195px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     display: none;
     position: absolute;
 }
@@ -187,7 +201,7 @@ body, html, #wrapper {
     bottom:0;
     right: 0;
     left: 0;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.7);
     z-index: 10;
 }
 

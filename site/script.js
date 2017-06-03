@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    /*---------Register form-----------*/
+    /*---------Register/login form-----------*/
     $.ajax({
         type: 'POST',
         cache: false,
@@ -18,9 +18,13 @@ $(document).ready(function () {
         $('.logform-container').show();
     });
 
+    $('#logout').click(function () {
+        window.location.href = "/logout";
+    });
+
     $('.closelog').click(function () {
         $('.logform-container').hide();
-    })
+    });
 
     /*---------Image size----------*/
     $('div.image > img').css({'height': '195px'});
@@ -72,5 +76,7 @@ $(document).ready(function () {
         $('.tit-author').empty();
         $('.tit-date').empty();
         $('body').css('overflow-y','inherit');
-    })
+    });
+
+
 });

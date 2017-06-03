@@ -38,8 +38,14 @@
             <div id="logo">
                 <img src="/site/img/logo.png">
             </div>
-            <div id="login"><span>Войти</span></div>
-        </div>
+            <?php
+            if (isset($_SESSION['session_username'])) {
+                echo '<div class="user-name"><span>' . $_SESSION['session_username'] . '</span></div>';
+                echo '<div id="logout"><span>Выйти</span></div>';
+            } else {
+                echo '<div id="login"><span>Войти</span></div>';
+            }
+            ?>
     </div>
     <div id="content">
         <div id="sideMenu">

@@ -22,3 +22,4 @@ for ($i = 0; $i < count($data); $i++) {
 }
 
 mysqli_close($link);
+
