@@ -1,4 +1,18 @@
 $(document).ready(function () {
+    var imgId;
+    /*-----------Functions---------*/
+    function queryLike() {
+        $.ajax({
+            type: 'POST',
+            cache: false,
+            url: '/likes.php',
+            data: {id: imgId},
+            success: function (data) {
+                $('.like-btn span').empty();
+                $('.like-btn span').append("<b>" + data + "</b>");
+            }
+        });
+    }
     /*---------Register/login form-----------*/
     $.ajax({
         type: 'POST',
@@ -44,7 +58,7 @@ $(document).ready(function () {
     /*---------Zoom----------------*/
     
     $('.post').click(function () {
-        var imgId = $(this).attr('id');
+        imgId = $(this).attr('id');
         $.ajax({
             type: 'POST',
             cache: false,
@@ -58,9 +72,11 @@ $(document).ready(function () {
                 }
                 $('.tit-name').html(data[0]['name']);
                 $('.tit-author').append("Автор: " + data[0]['postedBy']);
-                $('.tit-date').append("Опубликовано: " + data[0]['postDate'])
+                $('.tit-date').append("Опубликовано: " + data[0]['postDate']);
+                //$('.like').append(data['num']);
             }
         });
+        queryLike();
         $('body').css('overflow-y','hidden');
         $('.zoom-container').show();
     });
@@ -73,6 +89,16 @@ $(document).ready(function () {
         $('.tit-date').empty();
         $('body').css('overflow-y','inherit');
     });
-
-
+    /*------------Likes-------------*/
+    
+    $('.like-btn').click(function () {
+        $.ajax({
+            type: 'POST',
+            cache: false,
+            url: '/setlike.php',
+            data: {id: imgId},
+            dataType: "json"
+        });
+        queryLike();
+    });
 });

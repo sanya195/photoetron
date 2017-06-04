@@ -26,7 +26,7 @@
                 <div class="like">
                     <div class="like-btn">
                         <div style="background-image: url('https://vk.com/images/icons/video_actions.png');height: 11px;width: 15px;display: inline-block;margin: 3px 0 0 0;"></div>
-                        Мне нравится
+                        Мне нравится <span></span>
                     </div>
                     <div class="tit-date"></div>
                 </div>
