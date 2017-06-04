@@ -10,10 +10,6 @@ $(document).ready(function () {
         }
     });
 
-    $('.reg').click(function () {
-        
-    });
-
     $('#login').click(function () {
         $('.logform-container').show();
     });
